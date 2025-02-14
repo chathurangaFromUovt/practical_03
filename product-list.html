@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <style>
+            /* Bootstrap-friendly hover effects */
+            .transition {
+                transition: all 0.3s ease-in-out;
+            }
+            
+            .hover-shadow:hover {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                transform: scale(1.05);
+            }
+        
+            .hover-text:hover {
+                color: #ff4500 !important;
+            }
+        </style>
+</head>
+
+<body class="container-fluid">
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <!-- navbar name -->
+            <a class="navbar-brand ms-2" href="#">USER</a>
+
+            <!-- navbar buton -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                style="border-color: #d6d6d6; margin-bottom: 5px;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar menu -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="shoping-list.html">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">404 Page</a></li>
+                            <li><a class="dropdown-item" href="#">Common Page</a></li>
+                            <li><a class="dropdown-item" href="#">FAQ Page</a></li>
+                            <li><a class="dropdown-item" href="#">Hero Page</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolio Page</a></li>
+                            <li><a class="dropdown-item" href="#">Single Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- search bar -->
+            <form class="d-flex ms-auto col-12 col-sm col-md col-lg-6" style="max-width: 520px; min-width: 250px;">
+                <input class="form-control me-2 ms-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <br><br><br>
+
+    <header class="p-5 d-flex flex-column flex-md-row align-items-center justify-content-between"
+        style="background-color:  #f8f9fa;">
+
+        <div class="text-dark col-12 col-md-6">
+            <h2 class="text-center text-md-start" style="margin-left: -15px;">Products</h2>
+        </div>
+
+        <div class="container-fluid col-12 col-md-6 mt-4 mt-md-0">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center justify-content-md-end">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <!-- body_01 -->
+     
+    <body>
+        <div class="container-fluid p-3">
+            <div class="row">
+
+                <!-- Large left section -->
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <h4>CATEGORIES</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="checkbox" id="categoryA">
+                                <label for="categoryA">A Category</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="categoryB">
+                                <label for="categoryB">B Category</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="categoryC">
+                                <label for="categoryC">C Category</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="categoryD">
+                                <label for="categoryD">D Category</label>
+                            </li>
+                        </ul>
+                
+                        <h4>BRANDS</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="checkbox" id="brandA">
+                                <label for="brandA">A Brand</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="brandB">
+                                <label for="brandB">B Brand</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="brandC">
+                                <label for="brandC">C Brand</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="brandD">
+                                <label for="brandD">D Brand</label>
+                            </li>
+                        </ul>
+                
+                        <h4>PRICE</h4>
+                        <div class="d-flex justify-content-between">
+                            <input type="number" class="form-control me-2" placeholder="min">
+                            <input type="number" class="form-control" placeholder="max">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right sections -->
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="p-3 text-center text-md-start">
+                                <a href="product-details.html" class="d-inline-block">
+                                    <img src="product1.jpg" alt="Samyang Buldak 4 Cheese" class="img-fluid w-100 transition hover-shadow" style="max-width: 300px;">
+                                </a>
+                                <p class="mt-2 fw-bold">
+                                    <a href="product-details.html" class="text-decoration-none text-dark fw-bold hover-text">
+                                        SAMYANG BULDAK 4 CHEESE
+                                    </a>
+                                </p>
+                                <p class="text-muted">HOT CHICKEN RAMEN (120G)</p>
+                                <p class="text-warning">FIERY CHEESE BLEND</p>
+                                <p class="fw-bold">
+                                    <span class="text-danger">1100 LKR</span> 
+                                    <del class="text-muted">1200 LKR</del>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="p-3 text-center text-md-start">
+                                <a href="product-details.html" class="d-inline-block">
+                                    <img src="product2.jpg" alt="Samyang Buldak 4 Cheese" class="img-fluid w-100 transition hover-shadow" style="max-width: 300px;">
+                                </a>
+                                <p class="mt-2 fw-bold">
+                                    <a href="product-details.html" class="text-decoration-none text-dark fw-bold hover-text">
+                                        SAMYANG BULDAK 4 CHEESE
+                                    </a>
+                                </p>
+                                <p class="text-muted">HOT CHICKEN RAMEN (120G)</p>
+                                <p class="text-warning">FIERY CHEESE BLEND</p>
+                                <p class="fw-bold">
+                                    <span class="text-danger">1100 LKR</span> 
+                                    <del class="text-muted">1200 LKR</del>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="p-3 text-center text-md-start">
+                                <a href="product-details.html" class="d-inline-block">
+                                    <img src="product3.jpg" alt="Samyang Buldak 4 Cheese" class="img-fluid w-100 transition hover-shadow" style="max-width: 300px;">
+                                </a>
+                                <p class="mt-2 fw-bold">
+                                    <a href="product-details.html" class="text-decoration-none text-dark fw-bold hover-text">
+                                        SAMYANG BULDAK 4 CHEESE
+                                    </a>
+                                </p>
+                                <p class="text-muted">HOT CHICKEN RAMEN (120G)</p>
+                                <p class="text-warning">FIERY CHEESE BLEND</p>
+                                <p class="fw-bold">
+                                    <span class="text-danger">1100 LKR</span> 
+                                    <del class="text-muted">1200 LKR</del>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="p-3 text-center text-md-start">
+                                <a href="product-details.html" class="d-inline-block">
+                                    <img src="product4.jpg" alt="Samyang Buldak 4 Cheese" class="img-fluid w-100 transition hover-shadow" style="max-width: 300px;">
+                                </a>
+                                <p class="mt-2 fw-bold">
+                                    <a href="product-details.html" class="text-decoration-none text-dark fw-bold hover-text">
+                                        SAMYANG BULDAK 4 CHEESE
+                                    </a>
+                                </p>
+                                <p class="text-muted">HOT CHICKEN RAMEN (120G)</p>
+                                <p class="text-warning">FIERY CHEESE BLEND</p>
+                                <p class="fw-bold">
+                                    <span class="text-danger">1100 LKR</span> 
+                                    <del class="text-muted">1200 LKR</del>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="p-3 text-center text-md-start">
+                                <a href="product-details.html" class="d-inline-block">
+                                    <img src="product5.jpg" alt="Samyang Buldak 4 Cheese" class="img-fluid w-100 transition hover-shadow" style="max-width: 300px;">
+                                </a>
+                                <p class="mt-2 fw-bold">
+                                    <a href="product-details.html" class="text-decoration-none text-dark fw-bold hover-text">
+                                        SAMYANG BULDAK 4 CHEESE
+                                    </a>
+                                </p>
+                                <p class="text-muted">HOT CHICKEN RAMEN (120G)</p>
+                                <p class="text-warning">FIERY CHEESE BLEND</p>
+                                <p class="fw-bold">
+                                    <span class="text-danger">1100 LKR</span> 
+                                    <del class="text-muted">1200 LKR</del>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="p-3 text-center text-md-start">
+                                <a href="product-details.html" class="d-inline-block">
+                                    <img src="product6.jpg" alt="Samyang Buldak 4 Cheese" class="img-fluid w-100 transition hover-shadow" style="max-width: 300px;">
+                                </a>
+                                <p class="mt-2 fw-bold">
+                                    <a href="product-details.html" class="text-decoration-none text-dark fw-bold hover-text">
+                                        SAMYANG BULDAK 4 CHEESE
+                                    </a>
+                                </p>
+                                <p class="text-muted">HOT CHICKEN RAMEN (120G)</p>
+                                <p class="text-warning">FIERY CHEESE BLEND</p>
+                                <p class="fw-bold">
+                                    <span class="text-danger">1100 LKR</span> 
+                                    <del class="text-muted">1200 LKR</del>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="p-3 text-center text-md-start">
+                                <a href="product-details.html" class="d-inline-block">
+                                    <img src="product7.jpg" alt="Samyang Buldak 4 Cheese" class="img-fluid w-100 transition hover-shadow" style="max-width: 300px;">
+                                </a>
+                                <p class="mt-2 fw-bold">
+                                    <a href="product-details.html" class="text-decoration-none text-dark fw-bold hover-text">
+                                        SAMYANG BULDAK 4 CHEESE
+                                    </a>
+                                </p>
+                                <p class="text-muted">HOT CHICKEN RAMEN (120G)</p>
+                                <p class="text-warning">FIERY CHEESE BLEND</p>
+                                <p class="fw-bold">
+                                    <span class="text-danger">1100 LKR</span> 
+                                    <del class="text-muted">1200 LKR</del>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="p-3 text-center text-md-start">
+                                <a href="product-details.html" class="d-inline-block">
+                                    <img src="product8.jpg" alt="Samyang Buldak 4 Cheese" class="img-fluid w-100 transition hover-shadow" style="max-width: 300px;">
+                                </a>
+                                <p class="mt-2 fw-bold">
+                                    <a href="product-details.html" class="text-decoration-none text-dark fw-bold hover-text">
+                                        SAMYANG BULDAK 4 CHEESE
+                                    </a>
+                                </p>
+                                <p class="text-muted">HOT CHICKEN RAMEN (120G)</p>
+                                <p class="text-warning">FIERY CHEESE BLEND</p>
+                                <p class="fw-bold">
+                                    <span class="text-danger">1100 LKR</span> 
+                                    <del class="text-muted">1200 LKR</del>
+                                </p>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- footer -->
+
+    <footer>
+        <!-- First Footer Section -->
+        <div class="py-5 bg-light">
+            <div class="container">
+                <div class="row gy-4">
+                    <!-- About Us -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4>About us</h4>
+                        <p>
+                            This is a wider card with supporting text below
+                            as a natural lead-in to additional content.
+                        </p>
+                    </div>
+                    <!-- Important Links -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4>Important links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-dark">About us</a></li>
+                            <li><a href="#" class="text-dark">Privacy policy</a></li>
+                            <li><a href="#" class="text-dark">Terms of services</a></li>
+                        </ul>
+                    </div>
+                    <!-- Our Location -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4>Our location</h4>
+                        <p>
+                            Milannagar bazar<br>
+                            Tamluk, East Medinipore, West Bengal<br>
+                            720001, India
+                        </p>
+                    </div>
+                    <!-- Stay Updated -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4>Stay updated</h4>
+                        <form>
+                            <div class="mb-3">
+                                <input class="form-control" type="email" placeholder="E-mail" required>
+                            </div>
+                            <button class="btn btn-dark w-100" type="button">
+                                Subscribe now!
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second Footer Section -->
+        <div class="bg-dark py-3">
+            <div class="text-center text-white">
+                <p class="mb-0">Copyright © 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+
+</html>
