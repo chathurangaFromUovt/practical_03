@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <style>
+            /* Bootstrap-friendly hover effects */
+            .transition {
+                transition: all 0.3s ease-in-out;
+            }
+            
+            .hover-shadow:hover {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                transform: scale(1.05);
+            }
+        
+            .hover-text:hover {
+                color: #ff4500 !important;
+            }
+        </style>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body class="container-fluid">
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <!-- navbar name -->
+            <a class="navbar-brand ms-2" href="#">USER</a>
+
+            <!-- navbar buton -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                style="border-color: #d6d6d6; margin-bottom: 5px;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar menu -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="product-list.html">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">404 Page</a></li>
+                            <li><a class="dropdown-item" href="#">Common Page</a></li>
+                            <li><a class="dropdown-item" href="#">FAQ Page</a></li>
+                            <li><a class="dropdown-item" href="#">Hero Page</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolio Page</a></li>
+                            <li><a class="dropdown-item" href="#">Single Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- search bar -->
+            <form class="d-flex ms-auto col-12 col-sm col-md col-lg-6" style="max-width: 520px; min-width: 250px;">
+                <input class="form-control me-2 ms-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <br><br><br>
+
+    <header class="p-5 d-flex flex-column flex-md-row align-items-center justify-content-between"
+        style="background-color:  #f8f9fa;">
+
+        <div class="text-dark col-12 col-md-6">
+            <h2 class="text-center text-md-start">Product-details</h2>
+        </div>
+
+        <div class="container-fluid col-12 col-md-6 mt-4 mt-md-0">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center justify-content-md-end">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="product-list.html">Products</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Product-details</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <!-- body_01 -->
+
+    <div class="container mt-4">
+        <!-- First Row -->
+        <div class="row">
+
+
+            <div class="col-md-6 p-3">
+
+                <img src="product1.jpg" alt="Italian L Shape Sofa" class="img-fluid" />
+
+            </div>
+
+            <div class="col-md-6 p-3">
+
+                <div class="p-4">
+                    <h3>FLAVOR INSTANT NOODLE<br><span class="text-warning">(★★★★☆ 3 views)</span></h3>
+                    <p>Available: <span style="color: green;">In Stock</span></p>
+                    <div>
+                        <p>Brand: Apex</p>
+                        <p>Category: Sofa</p>
+                        <p>Price: 1100 <span style="text-decoration: line-through;">1200</span></p>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="sizeSelect" class="form-label">Please select size</label>
+                            <select class="form-select" id="sizeSelect" style="width: 150px;">
+                                <option selected>Choose size</option>
+                                <option value="1">Small</option>
+                                <option value="2">Medium</option>
+                                <option value="3">Large</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="colorSelect" class="form-label">Please select color</label>
+                            <select class="form-select" id="colorSelect" style="width: 150px;">
+                                <option selected>Choose color</option>
+                                <option value="1">Red</option>
+                                <option value="2">Blue</option>
+                                <option value="3">Green</option>
+                            </select>
+                            <div id="selectedColor" style="width: 20px; height: 20px; margin-top: 5px;"></div>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100">Add to Wishlist</button>
+                    </form>
+                    <!-- Social media icons -->
+                    <div class="mt-3 text-center">
+                        <div class="mt-3 text-start">
+                            <a href="#" class="mx-2"><i class="fab fa-facebook-square" style="font-size: 30px;"></i></a>
+                            <a href="#" class="mx-2"><i class="fab fa-twitter-square" style="font-size: 30px;"></i></a>
+                            <a href="#" class="mx-2"><i class="fab fa-instagram-square" style="font-size: 30px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        
+        <!-- Second Row -->
+        <div class="row">
+            <div class="col-12 p-3 mt-3">
+                <div class="d-flex justify-content-between">
+                    <img src="product1-1.jpg" alt="Image 1" class="img-fluid" style="width: 30%;">
+                    <img src="product1-2.jpg" alt="Image 2" class="img-fluid" style="width: 30%;">
+                    <img src="product1-3.jpg" alt="Image 3" class="img-fluid" style="width: 30%;">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Third Row -->
+        <div class="row">
+            <div class="col-12 p-3 mt-3">
+                <h4>Product details <hr></h4>
+                <p>
+                    Just like bread and noodles, pasta is also an important food category that people have been feeding on 
+                    for centuries, probably since ancient times. The first description of pasta dates from 1279. It refers to 
+                    macaroni, although they did not necessarily mean small tubes. About a hundred years later, gnocchi is 
+                    described in the Decameron. Also in the fourteenth century, Italian letters talk about ravioli filled with 
+                    pork, cheese, and parsley. It’s clear that, in the Middle Ages, people liked to eat pasta!
+                </p>
+                <p>
+                    An Italian mother would never just use any pasta form with her authentic pesto Genovese. Types of pasta 
+                    that go with pesto include linguine, penne, or trenette (a variant of tagliatelle).
+                </p>
+            </div>
+        </div>
+        
+        <!-- Fourth Row -->
+        <div class="row mt-3">
+            <h4>Related products <hr></h4>
+            <div class="col-md-3 p-3" >
+                <div class="p-3 text-center text-md-start">
+                    <a href="product-details.html" class="d-inline-block">
+                        <img src="product1.jpg" alt="Samyang Buldak 4 Cheese" class="img-fluid w-100 transition hover-shadow" style="max-width: 300px;">
+                    </a>
+                    <p class="mt-2 fw-bold">
+                        <a href="product-details.html" class="text-decoration-none text-dark fw-bold hover-text">
+                            BURNING DRY NOODLES
+                        </a>
+                    </p>
+                    <p class="text-muted">HOT CHICKEN RAMEN (120G)</p>
+                    <p class="text-warning">FIERY CHEESE BLEND</p>
+                    <p class="fw-bold">
+                        <span class="text-danger">1100 LKR</span> 
+                        <del class="text-muted">1200 LKR</del>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 p-3">
+                <div class="p-3 text-center text-md-start">
+                    <a href="product-details.html" class="d-inline-block">
+                        <img src="product2.jpg" alt="Samyang Buldak 4 Cheese" class="img-fluid w-100 transition hover-shadow" style="max-width: 300px;">
+                    </a>
+                    <p class="mt-2 fw-bold">
+                        <a href="product-details.html" class="text-decoration-none text-dark fw-bold hover-text">
+                            CHICKEN INSTANT NOODLE
+                        </a>
+                    </p>
+                    <p class="text-muted">HOT CHICKEN RAMEN (120G)</p>
+                    <p class="text-warning">FIERY CHEESE BLEND</p>
+                    <p class="fw-bold">
+                        <span class="text-danger">1100 LKR</span> 
+                        <del class="text-muted">1200 LKR</del>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 p-3">
+                <div class="p-3 text-center text-md-start">
+                    <a href="product-details.html" class="d-inline-block">
+                        <img src="product3.jpg" alt="Samyang Buldak 4 Cheese" class="img-fluid w-100 transition hover-shadow" style="max-width: 300px;">
+                    </a>
+                    <p class="mt-2 fw-bold">
+                        <a href="product-details.html" class="text-decoration-none text-dark fw-bold hover-text">
+                            NOODLES SPICY HOT FLAVOR
+                        </a>
+                    </p>
+                    <p class="text-muted">HOT CHICKEN RAMEN (120G)</p>
+                    <p class="text-warning">FIERY CHEESE BLEND</p>
+                    <p class="fw-bold">
+                        <span class="text-danger">1100 LKR</span> 
+                        <del class="text-muted">1200 LKR</del>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 p-3">
+                <div class="p-3 text-center text-md-start">
+                    <a href="product-details.html" class="d-inline-block">
+                        <img src="product4.jpg" alt="Samyang Buldak 4 Cheese" class="img-fluid w-100 transition hover-shadow" style="max-width: 300px;">
+                    </a>
+                    <p class="mt-2 fw-bold">
+                        <a href="product-details.html" class="text-decoration-none text-dark fw-bold hover-text">
+                            NAKED OAT NOODLES
+                        </a>
+                    </p>
+                    <p class="text-muted">HOT CHICKEN RAMEN (120G)</p>
+                    <p class="text-warning">FIERY CHEESE BLEND</p>
+                    <p class="fw-bold">
+                        <span class="text-danger">1100 LKR</span> 
+                        <del class="text-muted">1200 LKR</del>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+
+    <!-- footer -->
+
+    <footer>
+        <!-- First Footer Section -->
+        <div class="py-5 bg-light">
+            <div class="container">
+                <div class="row gy-4">
+                    <!-- About Us -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4>About us</h4>
+                        <p>
+                            This is a wider card with supporting text below
+                            as a natural lead-in to additional content.
+                        </p>
+                    </div>
+                    <!-- Important Links -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4>Important links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-dark">About us</a></li>
+                            <li><a href="#" class="text-dark">Privacy policy</a></li>
+                            <li><a href="#" class="text-dark">Terms of services</a></li>
+                        </ul>
+                    </div>
+                    <!-- Our Location -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4>Our location</h4>
+                        <p>
+                            Milannagar bazar<br>
+                            Tamluk, East Medinipore, West Bengal<br>
+                            720001, India
+                        </p>
+                    </div>
+                    <!-- Stay Updated -->
+                    <div class="col-lg-3 col-md-6">
+                        <h4>Stay updated</h4>
+                        <form>
+                            <div class="mb-3">
+                                <input class="form-control" type="email" placeholder="E-mail" required>
+                            </div>
+                            <button class="btn btn-dark w-100" type="button">
+                                Subscribe now!
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second Footer Section -->
+        <div class="bg-dark py-3">
+            <div class="text-center text-white">
+                <p class="mb-0">Copyright © 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+
+</html>
